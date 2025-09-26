@@ -12,7 +12,7 @@ self.addEventListener(
                         'bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js',
                         'lib1.js',
                         'lib2.js',
-                        'cat.jpg',
+                        'utp.png',
                         'unicorn.jpg',
                         'homescreen192.png'
                     ]);
