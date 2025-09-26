@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="manifest" href="manifest.json">
+    <title>PWA 3</title>
+    <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.min.css">
+    <script src="bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-2">
+                <h1>Hola PWA3</h1>
+                <img src="hola.png" alt="">
+                <a href="javascript:void(0)" onclick="exhibirLineas()">Exhibir Lineas</a><br>
+            </div>
+            <div class="col-5">
+                <div id="contenido">
+
+                </div>
+            </div>
+            <div class="col-5">
+                <canvas id="lienzo" width="400" height="300" style="border: 1px solid #000;">
+
+                </canvas>
+            </div>
+        </div>
+    </div>
+    <script async src="sw.js"></script>
+    <script async src="lib1.js"></script>
+    <script async src="lib2.js"></script>
+</body>
+</html>
