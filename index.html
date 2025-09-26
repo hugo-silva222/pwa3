@@ -31,5 +31,19 @@
     <script async src="sw.js"></script>
     <script async src="lib1.js"></script>
     <script async src="lib2.js"></script>
+    <script>
+        if('serviceWorker' in navigator){
+            navigator.serviceWorker.register('sw.js')
+            .then(
+                function(registro){
+                    console.log('Registro del SW satisfactorio con ambito: ', registro.scope);
+                }
+            ).catch(
+                function(err){
+                    console.log('El registro del SW fallo: ', err);
+                }
+            );
+        }
+    </script>
 </body>
 </html>
